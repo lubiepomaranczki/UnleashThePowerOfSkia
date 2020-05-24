@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UnleashThePowerOfSkia.Views.SkiaWatchPage">
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="UnleashThePowerOfSkia.Views.SkiaWatchPage"
+             Title="Skia Watch">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Hello, from SkiaWatch!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+            <forms:SKCanvasView x:Name="CanvasView" PaintSurface="OnCanvasViewPaintSurface" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

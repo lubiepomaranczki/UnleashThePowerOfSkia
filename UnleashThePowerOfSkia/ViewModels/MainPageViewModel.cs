@@ -4,7 +4,6 @@ using System.Windows.Input;
 using UnleashThePowerOfSkia.Models;
 using UnleashThePowerOfSkia.Views;
 using Xamarin.Forms;
-using XamForms.Enhanced.Providers;
 using XamForms.Enhanced.ViewModels;
 
 namespace UnleashThePowerOfSkia.ViewModels
