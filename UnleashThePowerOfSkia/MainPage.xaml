@@ -9,6 +9,7 @@
         ItemSelectedCommand="{Binding PageSelectedCmd}"
         ShouldHiglightSelected="false"
         HasUnevenRows="false" 
+        RowHeight="40"
         SeparatorVisibility="Default">
         <ListView.Footer>
             <Label Text="{Binding AppVersion}" HorizontalOptions="Center"/>

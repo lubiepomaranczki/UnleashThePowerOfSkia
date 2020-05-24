@@ -22,11 +22,18 @@
       <SubType>Designer</SubType>
       <Generator></Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\UserDrawingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Views\SkiaWatchPage.xaml.cs">
       <DependentUpon>SkiaWatchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UserDrawingPage.xaml.cs">
+      <DependentUpon>UserDrawingPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
