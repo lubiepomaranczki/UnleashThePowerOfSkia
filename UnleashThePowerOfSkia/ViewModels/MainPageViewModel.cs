@@ -18,7 +18,8 @@ namespace UnleashThePowerOfSkia.ViewModels
         
         public ObservableCollection<PageItem> Pages => new ObservableCollection<PageItem>
         {
-            new PageItem("Skia Watch", typeof(SkiaWatchPage))
+            new PageItem("Skia Watch", typeof(SkiaWatchPage)),
+            new PageItem("User drawing", typeof(UserDrawingPage))
         };
         
         public  ICommand PageSelectedCmd => new Command<PageItem>(async (page) =>

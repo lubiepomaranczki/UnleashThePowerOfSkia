@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:effects="clr-namespace:UnleashThePowerOfSkia.Effects;assembly=UnleashThePowerOfSkia"
+             x:Class="UnleashThePowerOfSkia.Views.UserDrawingPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="Freehand draw. Draw whatever you want" HorizontalOptions="Center" />
+            <Grid Grid.Row="1">
+                <forms:SKCanvasView x:Name="CanvasView" PaintSurface="OnCanvasViewPaintSurface" BackgroundColor="White" />
+                <Grid.Effects>
+                    <effects:TouchEffect Capture="True" TouchAction="TouchEffect_OnTouchAction" />
+                </Grid.Effects>
+            </Grid>
+            <Button Grid.Row="2" VerticalOptions="End" Text="Clear" HorizontalOptions="End" Margin="20" Clicked="Button_OnClicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
