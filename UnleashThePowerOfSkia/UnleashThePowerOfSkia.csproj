@@ -26,6 +26,18 @@
       <SubType>Designer</SubType>
       <Generator></Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\LineChartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\BarChartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PieChartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +46,15 @@
     </Compile>
     <Compile Update="Views\UserDrawingPage.xaml.cs">
       <DependentUpon>UserDrawingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\LineChartPage.xaml.cs">
+      <DependentUpon>LineChartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\BarChartPage.xaml.cs">
+      <DependentUpon>BarChartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PieChartPage.xaml.cs">
+      <DependentUpon>PieChartPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
