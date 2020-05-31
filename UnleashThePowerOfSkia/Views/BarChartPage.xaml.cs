@@ -1,3 +1,5 @@
+//Inspired by https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/graphics/skiasharp/curves/arcs
+
 using System;
 using System.Linq;
 using SkiaSharp;

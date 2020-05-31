@@ -2,13 +2,19 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="UnleashThePowerOfSkia.Views.PieChartPage"
              Title="PIE CHART 🍰">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Pie chart!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Gray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Text="{Binding Title}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalOptions="Fill" HorizontalTextAlignment="Center" Margin="4"/>
+            <forms:SKCanvasView Grid.Row="1" x:Name="CanvasView" PaintSurface="OnCanvasViewPaintSurface" Margin="10"/>
+            <Button Grid.Row="2" Text="Explode! 💣" TextColor="White" HorizontalOptions="Center" Command="{Binding ToggleExplodeCommand}" Margin="20"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
