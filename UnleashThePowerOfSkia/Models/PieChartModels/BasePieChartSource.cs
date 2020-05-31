@@ -8,8 +8,8 @@ namespace UnleashThePowerOfSkia.Models.PieChartModels
         public override string Title => "People who think I am beautiful";
         public override IList<Segment> Segments => new List<Segment>
         {
-            new Segment("My mom", 50,SKColors.Aqua),
-            new Segment("James Blunt", 50, SKColors.Red),
+            new Segment("My mom", 50),
+            new Segment("James Blunt", 50),
         };
     }
     
@@ -18,10 +18,10 @@ namespace UnleashThePowerOfSkia.Models.PieChartModels
         public override string Title => "Content of Pitbull songs";
         public override IList<Segment> Segments => new List<Segment>
         {
-            new Segment("Spanish words", 15, SKColors.Aqua),
-            new Segment("Mr. Word Wide", 25, SKColors.Red),
-            new Segment("Names of 4 big cities", 15, SKColors.Yellow),
-            new Segment("OOOOOOEEEEEEEEIIIIIII", 45, SKColors.Green),
+            new Segment("Spanish words", 15),
+            new Segment("Mr. Word Wide", 25),
+            new Segment("Names of 4 big cities", 15),
+            new Segment("OOOOOOEEEEEEEEIIIIIII", 45),
         };
     }
     
@@ -30,9 +30,9 @@ namespace UnleashThePowerOfSkia.Models.PieChartModels
         public override string Title => "Phrases that cause fear";
         public override IList<Segment> Segments => new List<Segment>
         {
-            new Segment("There is a spider!", 20, SKColors.Aqua),
-            new Segment("The test came positive...", 20, SKColors.Red),
-            new Segment("Can I talk to you?", 60, SKColors.Yellow),
+            new Segment("There is a spider!", 20),
+            new Segment("The test came positive...", 20),
+            new Segment("Can I talk to you?", 60),
         };
     }
     

@@ -80,7 +80,6 @@ namespace UnleashThePowerOfSkia.Views
                 using (SKPaint fillPaint = new SKPaint
                 {
                     Style = SKPaintStyle.Fill,
-                    Color = segment.Color,
                     Shader = SKShader.CreateRadialGradient(center, chartRadius, gradientColors, SKShaderTileMode.Clamp),
                     ImageFilter = SKImageFilter.CreateDropShadow(8, 8, 4, 4, SKColor.Parse("#A6808080"), SKDropShadowImageFilterShadowMode.DrawShadowAndForeground)
                 })

@@ -6,13 +6,11 @@ namespace UnleashThePowerOfSkia.Models.PieChartModels
     {
         public string Answer { get; }
         public int Percentage { get; }
-        public SKColor Color { get; }
 
-        public Segment(string answer, int percentage, SKColor color)
+        public Segment(string answer, int percentage)
         {
             Answer = answer;
             Percentage = percentage;
-            Color = color;
         }
     }
 }
