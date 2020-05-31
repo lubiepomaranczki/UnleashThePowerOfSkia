@@ -150,7 +150,7 @@ namespace UnleashThePowerOfSkia.Views
                 Color = SKColor.Parse("#808080"),
                 Style = SKPaintStyle.StrokeAndFill,
                 StrokeWidth = 2,
-                ImageFilter = SKImageFilter.CreateDropShadow(8, 8, 4, 4, SKColor.Parse("#A6808080"), SKDropShadowImageFilterShadowMode.DrawShadowAndForeground, null, null)
+                ImageFilter = SKImageFilter.CreateDropShadow(8, 8, 4, 4, SKColor.Parse("#A6808080"), SKDropShadowImageFilterShadowMode.DrawShadowAndForeground)
             })
             {
                 canvas.DrawCircle(watchDimensions.CanvasCenter, watchDimensions.ClockRadius, skPaint);
