@@ -22,7 +22,8 @@ namespace UnleashThePowerOfSkia.ViewModels
             new PageItem("User drawing 👨‍🎨", typeof(UserDrawingPage)),
             new PageItem("Bar chart 📊", typeof(BarChartPage)),
             new PageItem("Line chart 📊", typeof(LineChartPage)),
-            new PageItem("Pie chart 📊", typeof(PieChartPage))
+            new PageItem("Pie chart 📊", typeof(PieChartPage)),
+            new PageItem("Dummy analytics 🦄", typeof(AnalyticsPage))
         };
         
         public  ICommand PageSelectedCmd => new Command<PageItem>(async (page) =>

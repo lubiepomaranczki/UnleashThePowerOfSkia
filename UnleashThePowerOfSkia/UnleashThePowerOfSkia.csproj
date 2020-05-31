@@ -38,6 +38,10 @@
       <SubType>Designer</SubType>
       <Generator></Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\AnalyticsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +59,9 @@
     </Compile>
     <Compile Update="Views\PieChartPage.xaml.cs">
       <DependentUpon>PieChartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AnalyticsPage.xaml.cs">
+      <DependentUpon>AnalyticsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

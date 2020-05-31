@@ -137,4 +137,7 @@
       <Name>UnleashThePowerOfSkia</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\surfing.png" />
+  </ItemGroup>
 </Project>

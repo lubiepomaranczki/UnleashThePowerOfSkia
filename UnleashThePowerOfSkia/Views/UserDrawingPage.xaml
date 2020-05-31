@@ -4,7 +4,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              xmlns:effects="clr-namespace:UnleashThePowerOfSkia.Effects;assembly=UnleashThePowerOfSkia"
-             x:Class="UnleashThePowerOfSkia.Views.UserDrawingPage">
+             x:Class="UnleashThePowerOfSkia.Views.UserDrawingPage"
+             Title="Let's draw something!">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
